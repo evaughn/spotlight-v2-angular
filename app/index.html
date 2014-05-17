@@ -1,0 +1,17 @@
+<!Doctype HTML>
+<html ng-app='spotlightApp'>
+	<head>
+		<script src="js/lib/angular.min.js"/></script>
+		<script src="js/app.js"/></script>
+		<script src="js/modules/search/controller/searchCtrl.js"/></script>
+		<script src="js/modules/pane/controller/searchCtrl.js"/></script>
+	</head>
+	<body>
+		<div class="search-item" ng-controller="SearchCtrl">
+			<form ng-submit="searchArtist()">
+				<input type="text" ng-model="artist"/>
+				<input type="submit" ng-click="searchArtist" name="Submit"/>
+			</form>
+		</div>
+	</body>
+</html>
